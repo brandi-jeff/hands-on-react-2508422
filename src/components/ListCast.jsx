@@ -5,7 +5,7 @@ export default () => {
   const [cast, setCast] = useState([]);
 
   // async and await tell the fetch to do things in order
-  //async means not happening at the same time
+  //happens after DOM is done rendering
   async function fetchCast() {
     // await tells the function to wait for info to be fetched from json file and assigned to const 
     const response = await fetch('cast.json');
